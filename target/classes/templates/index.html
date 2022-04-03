@@ -38,9 +38,13 @@
 	<br>
 
 	<div class="container">
-		<h1>Registration and Login with Spring Boot, Spring Security,
-			Thymeleaf, Hibernate and MySQL</h1>
-		Welcome <span sec:authentication="principal.username"> User</span>
+		<br>
+		<br>
+		Welcome <span sec:authentication="principal.username"> User</span> to STUDENT MANAGEMENT SYSTEM
+		<br>
+		<br>
+		<a th:href = "@{/students}"
+		   class = "btn btn-danger">Go To Students Dashboard</a>
 	</div>
 </body>
 </html>
